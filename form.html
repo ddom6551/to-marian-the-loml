@@ -9,7 +9,7 @@
 <body class="form">
   <div class="form-overlay" id="form-section">
     <div class="container improved-form" id="form-box">
-      <h2>What’s on your mind?</h2>
+      <h2>what's on your mind?</h2>
       <form id="grievance-form">
         <div class="input-wrapper">
           <input id="title" type="text" name="title" placeholder="Title" required />
@@ -18,9 +18,9 @@
           <textarea id="description" name="description" placeholder="Message" rows="6" required></textarea>
         </div>
 
-        <label for="mood"><strong>Mood:</strong></label>
+        <label for="mood"><strong>mood:</strong></label>
         <select name="mood" required>
-          <option value="" disabled selected>Select mood</option>
+          <option value="" disabled selected>select mood</option>
           <option value="💔 - really really hurt">💔 - really really hurt</option>
           <option value="😭 - really sad">😭 - really sad</option>
           <option value="😢 - sad">😢 - sad</option>
@@ -33,9 +33,9 @@
           <option value="🤬 - you want me to kms">🤬 - you want me to kms</option>
         </select>
 
-        <label for="severity"><strong>How serious is it?</strong></label>
+        <label for="severity"><strong>how serious is it?</strong></label>
         <select name="severity" required>
-          <option value="" disabled selected>Select seriousness</option>
+          <option value="" disabled selected>select seriousness</option>
           <option value="just want to clear something up">just want to clear something up</option>
           <option value="small thing">small thing</option>
           <option value="mild">mild</option>
@@ -45,16 +45,16 @@
           <option value="disaster level (yung mapapa break ka na)">disaster level (yung mapapa break ka na)</option>
         </select>
 
-        <label for="response"><strong>How would you like me to respond?</strong></label>
+        <label for="response"><strong>how would you like me to respond?</strong></label>
         <select name="response" id="response" required onchange="toggleOther(this)">
-          <option value="" disabled selected>Select response method</option>
-          <option value="gmail">Gmail</option>
-          <option value="text">Text</option>
-          <option value="call">Call</option>
-          <option value="other">Other (specify)</option>
+          <option value="" disabled selected>select response method</option>
+          <option value="gmail">gmail</option>
+          <option value="text">text</option>
+          <option value="call">call</option>
+          <option value="other">other (specify)</option>
         </select>
         <div class="input-wrapper" id="other-response-box" style="display:none;">
-          <input type="text" name="otherResponse" placeholder="Please specify..." />
+          <input type="text" name="otherResponse" placeholder="please specify..." />
         </div>
 
         <button type="submit">Send</button>
