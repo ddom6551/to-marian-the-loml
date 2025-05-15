@@ -60,9 +60,9 @@ body.form.thankyou-mode {
   padding: 0.2em 0.5em;
   border-radius: 10px;
   color: #d6336c;
-  font-size: 1.8em;
-  box-decoration-break: clone; /* Ensures the border wraps each line */
-  -webkit-box-decoration-break: clone; /* For Safari */
+  font-size: 1.6em; /* Reduced font-size slightly */
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 .proceed-button {
@@ -138,6 +138,8 @@ form button {
   border: none;
   cursor: pointer;
   transition: background 0.3s ease;
+  padding: 1em 2em; /* Increased padding */
+  font-size: 1.1em; /* Slightly increased font-size */
 }
 
 form button:hover {
@@ -152,8 +154,9 @@ form button:hover {
   }
   form input,
   form textarea,
-  form select {
-    font-size: 0.95em;
+  form select,
+  form button {
+    font-size: 0.95em; /* Adjust button text size for smaller screens */
   }
 }
 
