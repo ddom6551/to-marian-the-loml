@@ -58,7 +58,7 @@ body.form.thankyou-mode {
 .highlight {
   background-color: #fff0f5;
   padding: 0.2em 0.5em;
-  border-radius: 10px;
+  border-radius: 6px;
   color: #d6336c;
   font-size: 1.6em; /* Reduced font-size slightly */
   box-decoration-break: clone;
