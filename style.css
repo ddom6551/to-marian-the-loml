@@ -50,11 +50,14 @@ body.form.thankyou-mode {
 }
 
 .highlight {
-  background-color: #fff0f5;
+  /* background-color: #fff0f5; Removed background color */
   padding: 0.2em 0.5em;
   border-radius: 10px;
   color: #d6336c;
   font-size: 1.8em;
+  box-decoration-break: clone; /* Ensures the border wraps each line */
+  -webkit-box-decoration-break: clone; /* For Safari */
+  border: 2px solid #fff0f5; /* Added a subtle border */
 }
 
 .proceed-button {
@@ -102,17 +105,26 @@ body.form.thankyou-mode {
   border: 1px solid #ccc;
   border-radius: 12px;
   font-size: 1em;
+  font-family: 'Segoe UI', sans-serif; /* Ensure the font is set */
   background: #fffafd;
-  text-align: left; /* Added: align text to the left */
+  text-align: left;
 }
 
-form select,
-form button {
+.input-wrapper textarea {
+  resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+form select option:disabled:first-child {
+  color: #aaa; /* Gray color for the placeholder */
+}
+
+form select {
   width: 100%;
   margin-bottom: 1em;
   padding: 0.75em;
   border-radius: 12px;
   font-size: 1em;
+  color: #333; /* Set the default text color for selected options */
 }
 
 form button {
