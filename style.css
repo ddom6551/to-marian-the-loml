@@ -49,15 +49,20 @@ body.form.thankyou-mode {
   animation: fadeIn 2s ease;
 }
 
+.welcome-box.improved h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  line-height: 1.2; /* Added line-height for spacing */
+}
+
 .highlight {
-  /* background-color: #fff0f5; Removed background color */
+  background-color: #fff0f5;
   padding: 0.2em 0.5em;
   border-radius: 10px;
   color: #d6336c;
   font-size: 1.8em;
   box-decoration-break: clone; /* Ensures the border wraps each line */
   -webkit-box-decoration-break: clone; /* For Safari */
-  border: 2px solid #fff0f5; /* Added a subtle border */
 }
 
 .proceed-button {
@@ -114,8 +119,8 @@ body.form.thankyou-mode {
   resize: vertical; /* Allow vertical resizing of the textarea */
 }
 
-form select option:disabled:first-child {
-  color: #aaa; /* Gray color for the placeholder */
+form select > option:disabled {
+  color: #aaa; /* Gray color for the disabled placeholder option */
 }
 
 form select {
@@ -124,7 +129,7 @@ form select {
   padding: 0.75em;
   border-radius: 12px;
   font-size: 1em;
-  color: #333; /* Set the default text color for selected options */
+  color: #333; /* Default text color for selected options */
 }
 
 form button {
