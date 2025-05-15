@@ -52,15 +52,20 @@ body.form.thankyou-mode {
 .welcome-box.improved h1 {
   font-size: 2.5em;
   margin-bottom: 0.5em;
-  line-height: 1.2; /* Added line-height for spacing */
+  line-height: 1.2;
+  background-color: #fff0f5; /* Added background to the whole h1 */
+  padding: 0.2em 0.5em;
+  border-radius: 10px;
+  color: #d6336c;
+  display: inline-block; /* Crucial: Makes the background fit the content */
 }
 
-.highlight {
+.highlight { /* Remove this entire rule */
   background-color: #fff0f5;
   padding: 0.2em 0.5em;
-  border-radius: 6px;
+  border-radius: 10px;
   color: #d6336c;
-  font-size: 1.6em; /* Reduced font-size slightly */
+  font-size: 1.6em;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
 }
@@ -138,8 +143,10 @@ form button {
   border: none;
   cursor: pointer;
   transition: background 0.3s ease;
-  padding: 1em 2em; /* Increased padding */
-  font-size: 1.1em; /* Slightly increased font-size */
+  padding: 1em 2em;
+  font-size: 1.1em;
+  border-radius: 12px; /* Added rounded corners */
+  font-weight: bold; /* Added bold text */
 }
 
 form button:hover {
