@@ -40,7 +40,7 @@ body.form.thankyou-mode {
 
 .welcome-box.improved {
   background: rgba(255,192,203,0.85);
-  border: 3px dashed #e59bb0;
+  border: 5px solid #d6336c; /* Changed: thicker, solid, darker color */
   border-radius: 30px;
   padding: 3em;
   max-width: 700px;
@@ -103,7 +103,7 @@ body.form.thankyou-mode {
   border-radius: 12px;
   font-size: 1em;
   background: #fffafd;
-  text-align: center;
+  text-align: left; /* Added: align text to the left */
 }
 
 form select,
@@ -151,6 +151,7 @@ form button:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   animation: fadeIn 2s ease;
   position: relative;
+  border: 5px solid #d6336c; /* Added: border like the index page */
 }
 
 #thank-you-message h2 {
