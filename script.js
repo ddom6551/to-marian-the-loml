@@ -1,4 +1,3 @@
-const moods = ["Devastated","Sad","Neutral","Happy","Glorious"];
 const form = document.getElementById('grievance-form');
 const formBox = document.getElementById("form-box");
 
@@ -9,9 +8,11 @@ form.addEventListener('submit', e => {
     description: document.getElementById('description').value,
     mood: form.mood.value,
     severity: form.severity.value,
+    response: form.response.value,  // Add this line
+    otherResponse: document.querySelector('input[name="otherResponse"]').value, // Add this line
     timestamp: new Date().toLocaleString()
   };
-  fetch('https://script.google.com/macros/s/AKfycbzCScHdC9A89s6sbf5en8SCjfspdM9mlnNWMn9_LjqkgJqPGoOgYEk1fomBJsZebKxjVg/exec', {
+  fetch('https://script.google.com/macros/s/AKfycbxh_gqKTDxaGPPvkRdmVos0saQ95QMUP8LAhyQj_ONvKk_7TntNlUmycmHBmQ5LuW4l2Q/exec', {
     method: 'POST',
     mode: 'no-cors',
     headers: { 'Content-Type': 'application/json' },
